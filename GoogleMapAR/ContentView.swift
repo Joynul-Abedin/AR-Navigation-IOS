@@ -223,8 +223,6 @@ struct ARView: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARSCNView, context: Context) {
         guard let sceneView = uiView as? SceneLocationView else { return }
-        // Use cached POIs to update the scene
-        
         sceneView.removeAllNodes()
         addPOIsToScene(pois: poisCached, sceneView: sceneView)
         
@@ -294,7 +292,6 @@ struct ARView: UIViewRepresentable {
         guard let lastLocation = lastFetchedLocation else {
             return true // No last location, fetch POIs
         }
-
         return distanceBetween(lastLocation, and: newLocation) > 300 // Threshold in meters
     }
 
