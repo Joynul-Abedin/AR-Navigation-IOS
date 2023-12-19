@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
+        GMSServices.provideAPIKey("AIzaSyBrd2vc69Mfq1-OPQmsUNjRhYFfM9-tDJc")
+//        GMSPlacesClient.provideAPIKey("AIzaSyCHmGHQ80ldaFcd_vvh_FV6G0UGUvlZNO0")
 
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7977F54B1B56F5198FAC51 /* libPods-GoogleMapAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF639CC6C311C5595E186F7 /* libPods-GoogleMapAR.a */; };
+		70AFFDAC2B26DE1300DE68B5 /* ARCL in Frameworks */ = {isa = PBXBuildFile; productRef = 70AFFDAB2B26DE1300DE68B5 /* ARCL */; };
+		70AFFDB22B26E4BA00DE68B5 /* arrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 70AFFDB12B26E4BA00DE68B5 /* arrow.usdz */; };
 		70D221242B1831F300F1AC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D221232B1831F300F1AC0E /* AppDelegate.swift */; };
 		70D221262B1831F300F1AC0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D221252B1831F300F1AC0E /* ContentView.swift */; };
 		70D221282B1831F400F1AC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D221272B1831F400F1AC0E /* Assets.xcassets */; };
@@ -14,11 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		462FEDF3B86BF42E3580DE83 /* Pods-GoogleMapAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapAR.release.xcconfig"; path = "Target Support Files/Pods-GoogleMapAR/Pods-GoogleMapAR.release.xcconfig"; sourceTree = "<group>"; };
+		70AFFDB12B26E4BA00DE68B5 /* arrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = arrow.usdz; path = ../../../Desktop/arrow.usdz; sourceTree = "<group>"; };
 		70D221202B1831F300F1AC0E /* GoogleMapAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D221232B1831F300F1AC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D221252B1831F300F1AC0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		70D221272B1831F400F1AC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D2212A2B1831F400F1AC0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDF639CC6C311C5595E186F7 /* libPods-GoogleMapAR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleMapAR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E4C53DDECBFF81B6E403E4 /* Pods-GoogleMapAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapAR.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMapAR/Pods-GoogleMapAR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AFFDAC2B26DE1300DE68B5 /* ARCL in Frameworks */,
+				2D7977F54B1B56F5198FAC51 /* libPods-GoogleMapAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C3BA263091CA7174DB5DE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8E4C53DDECBFF81B6E403E4 /* Pods-GoogleMapAR.debug.xcconfig */,
+				462FEDF3B86BF42E3580DE83 /* Pods-GoogleMapAR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51317BC1A85C4F5AAAB227CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDF639CC6C311C5595E186F7 /* libPods-GoogleMapAR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70D221172B1831F300F1AC0E = {
 			isa = PBXGroup;
 			children = (
 				70D221222B1831F300F1AC0E /* GoogleMapAR */,
 				70D221212B1831F300F1AC0E /* Products */,
+				04C3BA263091CA7174DB5DE2 /* Pods */,
+				51317BC1A85C4F5AAAB227CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +79,7 @@
 		70D221222B1831F300F1AC0E /* GoogleMapAR */ = {
 			isa = PBXGroup;
 			children = (
+				70AFFDB12B26E4BA00DE68B5 /* arrow.usdz */,
 				70D221232B1831F300F1AC0E /* AppDelegate.swift */,
 				70D221252B1831F300F1AC0E /* ContentView.swift */,
 				70D221272B1831F400F1AC0E /* Assets.xcassets */,
@@ -74,15 +103,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70D2212E2B1831F400F1AC0E /* Build configuration list for PBXNativeTarget "GoogleMapAR" */;
 			buildPhases = (
+				046F4FCFBC38AFD7CF4C5E1A /* [CP] Check Pods Manifest.lock */,
 				70D2211C2B1831F300F1AC0E /* Sources */,
 				70D2211D2B1831F300F1AC0E /* Frameworks */,
 				70D2211E2B1831F300F1AC0E /* Resources */,
+				283ABA4B1BE9B1505D3CBB3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GoogleMapAR;
+			packageProductDependencies = (
+				70AFFDAB2B26DE1300DE68B5 /* ARCL */,
+			);
 			productName = GoogleMapAR;
 			productReference = 70D221202B1831F300F1AC0E /* GoogleMapAR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 70D221172B1831F300F1AC0E;
+			packageReferences = (
+				70AFFDAA2B26DE1300DE68B5 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */,
+			);
 			productRefGroup = 70D221212B1831F300F1AC0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,10 +164,53 @@
 			files = (
 				70D2212B2B1831F400F1AC0E /* Preview Assets.xcassets in Resources */,
 				70D221282B1831F400F1AC0E /* Assets.xcassets in Resources */,
+				70AFFDB22B26E4BA00DE68B5 /* arrow.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		046F4FCFBC38AFD7CF4C5E1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleMapAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		283ABA4B1BE9B1505D3CBB3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapAR/Pods-GoogleMapAR-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapAR/Pods-GoogleMapAR-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMapAR/Pods-GoogleMapAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70D2211C2B1831F300F1AC0E /* Sources */ = {
@@ -182,7 +262,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +325,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +346,7 @@
 		};
 		70D2212F2B1831F400F1AC0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E4C53DDECBFF81B6E403E4 /* Pods-GoogleMapAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -276,12 +357,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need to use the google Map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to use the google Map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,6 +379,7 @@
 		};
 		70D221302B1831F400F1AC0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462FEDF3B86BF42E3580DE83 /* Pods-GoogleMapAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,12 +390,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need to use the google Map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to use the google Map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70AFFDAA2B26DE1300DE68B5 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndrewHartAR/ARKit-CoreLocation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70AFFDAB2B26DE1300DE68B5 /* ARCL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70AFFDAA2B26DE1300DE68B5 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */;
+			productName = ARCL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70D221182B1831F300F1AC0E /* Project object */;
 }
